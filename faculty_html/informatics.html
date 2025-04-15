@@ -11,6 +11,10 @@
     <h1>情報学部履修登録チェッカー</h1>
 
     <hr>
+    <p>コースを選択してください</p>
+    <div id="courceCheck"></div>
+    <br>
+
     <!-- 1回生用のセクション -->
     <div id="section-1" class="section">
         <h2>1年次</h2>
@@ -32,9 +36,11 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject1">合計科目: 0</div>
+        <div id="total-unit1">合計単位: 0</div>
 
+        <br>
+        
         <label>【後期】登録科目</label>
         <table class="semester2">
             <tr>
@@ -52,22 +58,10 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject2">合計科目: 0</div>
+        <div id="total-unit2">合計単位: 0</div>
         <br>
-        <div class="judgeCredit" id="judge1to2"></div>
-    </div>
-
-    <!-- 1回生->2回生進級判定 -->
-    <div>
-        <table>
-            <tr>
-                <th>1回生 -> 2回生</th>
-            </tr>
-            <tr>
-                <td>判定(>=24)</td>
-            </tr>
-        </table>
+        <div class="judgeCredit" id="judge1">判定:(最下部のボタンを押すと判定が表示されます)</div>
     </div>
 
     <hr>
@@ -92,8 +86,10 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject3">合計科目: 0</div>
+        <div id="total-unit3">合計単位: 0</div>
+
+        <br>
 
         <label>【後期】登録科目</label>
         <table class="semester4">
@@ -112,10 +108,10 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject4">合計科目: 0</div>
+        <div id="total-unit4">合計単位: 0</div>
         <br>
-        <div class="judgeCredit" id="judge2to3"></div>
+        <div class="judgeCredit" id="judge2">判定:(最下部のボタンを押すと判定が表示されます)</div>
     </div>
 
     <hr>
@@ -139,8 +135,10 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject5">合計科目: 0</div>
+        <div id="total-unit5">合計単位: 0</div>
+
+        <br>
 
         <label>【後期】登録科目</label>
         <table class="semester6">
@@ -159,10 +157,10 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject6">合計科目: 0</div>
+        <div id="total-unit6">合計単位: 0</div>
         <br>
-        <div class="judgeCredit" id="judge3to4"></div>
+        <div class="judgeCredit" id="judge3">判定:(最下部のボタンを押すと判定が表示されます)</div>
     </div>
 
     <hr>
@@ -186,8 +184,10 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject7">合計科目: 0</div>
+        <div id="total-unit7">合計単位: 0</div>
+
+        <br>
 
         <label>【後期】登録科目</label>
         <table class="semester8">
@@ -206,18 +206,14 @@
             </tr>
         </table>
 
-        <div id="total-subject">合計科目: 0</div>
-        <div id="total-unit">合計単位: 0</div>
+        <div id="total-subject8">合計科目: 0</div>
+        <div id="total-unit8">合計単位: 0</div>
 
-        <div class="judgeCredit" id="judgeGraduate"></div>
+        <div class="judgeCredit" id="judge4">判定:(最下部のボタンを押すと判定が表示されます)</div>
     </div>
     <hr>
-
-    <!-- 2回生->3回生進級判定 -->
-
-    <!-- 3回生->4回生進級判定 -->
-
-    <!-- 3回生->4回生進級判定 -->
+   
+    <button id="checkButton">判定!!!</button>
 
     <!-- JavaScript を外部ファイルから読み込む -->
     <script src="../faculty_js/informatics/checker.js"></script>
